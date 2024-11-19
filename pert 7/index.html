@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi Buku Favorit</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-serif m-5 bg-gradient-to-l from-purple-400 to-fuchsia-400">
+    <h1 class="text-3xl font-bold text-purple-950 flex justify-center">
+        Aplikasi Buku Favorit
+      </h1>
+    <!-- Input Nama Pengguna -->
+    <div id="session-container" class="my-5">
+        <input type="text" id="namaPengguna" placeholder="Masukkan Nama Anda" class="mx-2.5 p-2 w-full mx-5 my-2.5 box-border rounded-md border border-black" style="width: calc(100% - 20px);"/>
+        <button id="btnSimpanNama" class="px-4 py-2 bg-purple-700 text-white border border-slate-600 rounded-lg hover:bg-purple-950">Simpan Nama</button>
+        <h3 id="salamPengguna"></h3>
+    </div>
+
+    <!-- Form Tambah Buku -->
+    <form id="form-tambah-buku">
+        <input type="text" id="judul" placeholder="Judul Buku" required class="mx-2.5 p-2 w-full mx-5 my-2.5 box-border rounded-md border border-black " style="width: calc(100% - 20px);" />
+        <input type="text" id="penulis" placeholder="Penulis" required class="mx-2.5 p-2 w-full mx-5 my-2.5 box-border rounded-md border border-black " style="width: calc(100% - 20px);"/>
+        <input type="number" id="tahun" placeholder="Tahun Terbit" required class="mx-2.5 p-2 w-full mx-5 my-2.5 box-border rounded-md border border-black" style="width: calc(100% - 20px);"/>
+        <button type="submit"  class="px-4 py-2 bg-purple-700 text-white border border-slate-600 rounded-lg hover:bg-purple-950">
+            Tambah Buku
+        </button>
+    </form>
+
+    <!-- Daftar Buku -->
+    <h2 class="text-3xl font-bold text-purple-950">
+        Daftar Buku
+      </h2>
+    <div id="daftar-buku" class="border border-purple-900 p-2.5"></div>
+
+    <!-- Buku Favorit -->
+    <h1 class="text-3xl font-bold text-purple-950">
+        Buku Favorit
+      </h1>
+    <div id="buku-favorit" class="border border-purple-900 p-2.5"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
